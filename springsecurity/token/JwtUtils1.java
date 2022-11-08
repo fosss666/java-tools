@@ -10,10 +10,6 @@ import org.springframework.util.StringUtils;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
-/**
- * @author helen
- * @since 2019/10/16
- */
 public class JwtUtils {
 
     public static final long EXPIRE = 1000 * 60 * 60 * 24;
