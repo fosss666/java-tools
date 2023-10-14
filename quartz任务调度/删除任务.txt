@@ -1,0 +1,11 @@
+@Resource
+    private Scheduler scheduler;
+
+    /**
+     * 删除任务调度
+     */
+    @Test
+    public void testDeleteJob() throws SchedulerException {
+        boolean res = scheduler.deleteJob(new JobKey("alphaJob", "alphaJobGroup"));
+        System.out.println(res);
+    }
